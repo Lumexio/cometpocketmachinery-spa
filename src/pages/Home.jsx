@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 const projects = [
   {
     title: 'StockMachine Service',
-    badge: 'Reference Blueprint • LIVE',
+    badge: 'Flagship System • LIVE',
     domain: 'stockmachine.online',
     url: 'https://stockmachine.online',
-    desc: 'Our enterprise flagship inventory management SaaS. Fully deployed on VPS with Docker & Nginx. Enforces our architectural standard for multi-tenant JWT authentication and operational audit history.',
-    tags: ['NestJS', 'React & Electron', 'Docker & Nginx', 'Multi-Tenant RLS'],
+    desc: 'Our enterprise flagship inventory management platform. Track products across multiple warehouses, monitor real-time stock movements, and sync across desktop, web, and mobile devices.',
+    tags: ['Inventory System', 'Multi-Location', 'Desktop & Mobile', 'Offline Sync'],
     color: '#e62429'
   },
   {
@@ -17,8 +17,8 @@ const projects = [
     badge: 'Core Platform • LIVE',
     domain: 'merchantgo.store',
     url: 'https://merchantgo.store',
-    desc: 'Next-generation restaurant and bar point-of-sale (POS) suite. Features instant waiter PIN authentication, live table order synchronization via WebSockets, and rapid Z-Report shift settlements ("Cortes de Caja").',
-    tags: ['NestJS Monorepo', 'React POS', 'WebSockets', 'Shared Tablet PIN'],
+    desc: 'Next-generation restaurant and bar point-of-sale suite. Features instant waiter PIN login, live table order synchronization across stations, and rapid Z-Report shift settlements ("Cortes de Caja").',
+    tags: ['Restaurant POS', 'Rapid Checkout', 'Shared Tablet PIN', 'Shift Z-Reports'],
     color: '#ff6b00'
   },
   {
@@ -27,7 +27,7 @@ const projects = [
     domain: 'quiromedic.site',
     url: 'https://quiromedic.site',
     desc: 'High-security patient health record and diagnostic monitoring suite for medical professionals and multidisciplinary clinical centers. Includes flexible onboarding for individual specialists or multi-doctor clinics.',
-    tags: ['Inertia + Vue 3', 'Dockerized DevOps', 'Clinical Analytics', 'Multi-Tier Plans'],
+    tags: ['Patient Records', 'Clinical Diagnostics', 'Data Privacy', 'Solo & Clinic Plans'],
     color: '#00b368'
   },
   {
@@ -35,8 +35,8 @@ const projects = [
     badge: 'Media Suite • LIVE',
     domain: 'playlistdownloader.online',
     url: 'https://playlistdownloader.online',
-    desc: 'High-speed audio curation and streaming extraction utility. Offers real-time playlist parsing across major streaming providers with tiered audio bitrate formats up to lossless FLAC and priority batch queueing.',
-    tags: ['React + Vite Web', 'Audio Extraction API', 'Tiered SaaS Billing', 'Batch Queues'],
+    desc: 'High-speed audio curation and extraction utility. Offers real-time playlist parsing across major streaming providers with audio formats up to lossless FLAC and priority batch queueing.',
+    tags: ['Audio Curation', 'High-Speed FLAC/MP3', 'Batch Downloads', 'Offline Playback'],
     color: '#7f5af0'
   },
   {
@@ -44,8 +44,8 @@ const projects = [
     badge: 'Founder Brand • LIVE',
     domain: 'lumexio.site',
     url: 'https://lumexio.site',
-    desc: 'The personal architecture showcase and technical command hub of Principal Architect Lumexio. Oversees structural standards, container orchestration, and UI/UX excellence across all brand endeavors.',
-    tags: ['Svelte + Vite', '3D Spline', 'System Architecture', 'Principal Command'],
+    desc: 'The personal architecture showcase and technical command hub of Principal Architect Lumexio. Oversees platform design, cloud reliability, and UI/UX excellence across all brand endeavors.',
+    tags: ['System Architecture', 'Software Portfolio', 'Technical Excellence', 'Principal Command'],
     color: '#2cb67d'
   }
 ];
@@ -91,15 +91,15 @@ export default function Home() {
             </div>
             <div>
               <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: 'var(--primary)', fontFamily: 'var(--font-heading)' }}>99.99%</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>VPS Nginx Uptime</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Cloud Uptime</span>
             </div>
             <div>
-              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: '#fff', fontFamily: 'var(--font-heading)' }}>100% RLS</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Tenant Isolation</span>
+              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: '#fff', fontFamily: 'var(--font-heading)' }}>100%</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Secure Data Isolation</span>
             </div>
             <div>
-              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: '#00b368', fontFamily: 'var(--font-heading)' }}><Activity size={24} style={{ display: 'inline' }} /> Sync</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>WebSocket Real-Time</span>
+              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: '#00b368', fontFamily: 'var(--font-heading)' }}><Activity size={24} style={{ display: 'inline' }} /> Instant</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Real-Time Device Sync</span>
             </div>
           </div>
 
@@ -206,9 +206,9 @@ export default function Home() {
               <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(230,36,41,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px', border: '1px solid rgba(230,36,41,0.3)' }}>
                 <ShieldCheck size={24} color="var(--primary)" />
               </div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>1. Reference Blueprint Truth</h3>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>1. Built for High Reliability</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                <code>stockmachine-service</code> serves as our indisputable production truth. Docker file orchestration, Nginx reverse proxy routing, and GitHub Action workflows replicate its exact, time-tested blueprints.
+                Every solution in our suite is engineered for rock-solid stability. Our cloud deployment platforms and offline modes ensure uninterrupted daily service during your busiest operating hours.
               </p>
             </div>
 
@@ -216,9 +216,9 @@ export default function Home() {
               <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(255,107,0,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px', border: '1px solid rgba(255,107,0,0.3)' }}>
                 <Layers size={24} color="#ff6b00" />
               </div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>2. Strict Tenant Isolation</h3>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>2. Ironclad Data Privacy</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                Whether handling clinical records in QuiroMedic or high-velocity bar tabs in MerchantGo, all database transactions pass through strict Row-Level Security interceptors scoped to verified JWT claims.
+                Whether handling confidential clinical records in QuiroMedic or daily shift financial ledgers in MerchantGo, all customer data accounts are strictly isolated and securely encrypted in the cloud.
               </p>
             </div>
 
@@ -226,9 +226,9 @@ export default function Home() {
               <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(0,179,104,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px', border: '1px solid rgba(0,179,104,0.3)' }}>
                 <Zap size={24} color="#00b368" />
               </div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>3. Modular Integration</h3>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>3. Seamless Ecosystem Strategy</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                We never duplicate domain logic. MerchantGo excels at shift sales and cashout settlements ("El Corte"), delegating deep inventory capabilities to Stockmachine via automated REST API integrations.
+                We focus each solution on its dedicated strengths. MerchantGo excels at high-speed shift sales and cashout settlements ("El Corte"), while StockMachine provides advanced inventory tracking across your enterprise.
               </p>
             </div>
 

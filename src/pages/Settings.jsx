@@ -41,7 +41,7 @@ export default function Settings() {
         <span className="badge">Application Preferences & Customization</span>
         <h1 style={{ fontSize: '2.8rem', marginBottom: '10px' }}>Ecosystem Settings</h1>
         <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem' }}>
-          Configure dual-column color schemes, international localization, and real-time WebSocket sync behaviors across all Comet Pocket Machinery applications.
+          Configure color schemes, international localization, and real-time device synchronization preferences across all Comet Pocket Machinery applications.
         </p>
       </div>
 
@@ -162,7 +162,7 @@ export default function Settings() {
             
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingBottom: '16px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
               <div>
-                <strong style={{ color: '#fff', display: 'block', marginBottom: '4px' }}>WebSocket Real-Time Order Sync</strong>
+                <strong style={{ color: '#fff', display: 'block', marginBottom: '4px' }}>Live Real-Time Order Sync</strong>
                 <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>Immediately sync waiter PIN tablet orders to cashier POS screens in MerchantGo.</span>
               </div>
               <button 

@@ -11,7 +11,7 @@ const roadmapInnovations = [
       'Seamless multi-room tablet software session auto-locking',
       'Digital Z-Report automated shift financial audit exports',
       'Dual-screen waitstaff order builder + customer billing display',
-      'Instant offline SQLite shift trail buffering'
+      'Instant offline mode with automated re-synchronization'
     ],
     accent: '#ff6b00'
   },
@@ -23,7 +23,7 @@ const roadmapInnovations = [
     features: [
       'Automated stock depletion estimation alerts via REST API',
       'Instant low-stock warning triggers sent to manager dashboards',
-      'Zero-friction cloud TypeORM Row-Level Security isolation',
+      'Enterprise data security with isolated customer accounts',
       'Designed for industrial freezer and cold storage workflows'
     ],
     accent: '#e62429'
@@ -35,7 +35,7 @@ const roadmapInnovations = [
     desc: 'A future clinical synchronization module to automatically relay vitals and diagnostic telemetry into QuiroMedic electronic health records.',
     features: [
       'Secure diagnostic vital metric ingestion to clinical charts',
-      'End-to-end encrypted medical data storage on cloud VPS',
+      'End-to-end encrypted medical data storage in the cloud',
       'Automated patient record indexing via encrypted IDs',
       'Streamlined digital workflows for single doctors & clinics'
     ],
@@ -87,10 +87,10 @@ export default function Innovations() {
           <h4 style={{ color: '#fff', marginBottom: '14px', fontSize: '1.1rem' }}>Active Cloud SaaS Capabilities:</h4>
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.95rem', color: '#ccc' }}>
             <li style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <CheckCircle2 size={16} color="#00ff66" /> <span>Real-Time WebSocket & Socket.io Room Routing</span>
+              <CheckCircle2 size={16} color="#00ff66" /> <span>Real-Time Device Synchronization Across All Stations</span>
             </li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <CheckCircle2 size={16} color="#00ff66" /> <span>Stripe Embedded Checkouts & Appwrite Cloud BaaS</span>
+              <CheckCircle2 size={16} color="#00ff66" /> <span>Secure Cloud Backup & Simple Subscription Billing</span>
             </li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <CheckCircle2 size={16} color="#00ff66" /> <span>Generous Free Solo Starters & Express Workflows</span>

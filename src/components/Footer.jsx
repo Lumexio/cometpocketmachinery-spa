@@ -26,10 +26,10 @@ export default function Footer() {
             </p>
             <div style={{ display: 'flex', gap: '16px', color: 'var(--text-main)' }}>
               <span style={{ fontSize: '0.8rem', background: 'rgba(230,36,41,0.1)', color: 'var(--primary)', padding: '4px 10px', borderRadius: '6px', border: '1px solid rgba(230,36,41,0.3)' }}>
-                VPS Docker Ready
+                Cloud Ready
               </span>
               <span style={{ fontSize: '0.8rem', background: 'rgba(255,255,255,0.05)', padding: '4px 10px', borderRadius: '6px', border: '1px solid var(--border-glass)' }}>
-                Strict Multi-Tenancy RLS
+                Strict Account Privacy
               </span>
             </div>
           </div>
@@ -45,14 +45,14 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Architecture & Stack */}
+          {/* Core Solutions */}
           <div>
-            <h4 style={{ color: 'var(--text-main)', marginBottom: '16px', fontSize: '1rem', fontFamily: 'var(--font-heading)' }}>Architecture</h4>
+            <h4 style={{ color: 'var(--text-main)', marginBottom: '16px', fontSize: '1rem', fontFamily: 'var(--font-heading)' }}>Solutions</h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.9rem' }}>
-              <li><span>NestJS Microservices</span></li>
-              <li><span>React & Vite Clients</span></li>
-              <li><span>Electron Desktop POS</span></li>
-              <li><span>Docker & Nginx Reverse Proxy</span></li>
+              <li><span>Cloud Inventory System</span></li>
+              <li><span>Multi-Organization POS</span></li>
+              <li><span>Clinical Health Suite</span></li>
+              <li><span>High-Speed Audio Media</span></li>
             </ul>
           </div>
 
@@ -79,8 +79,8 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} Comet Pocket Machinery Ecosystem. All production standards enforced.</p>
           <div style={{ display: 'flex', gap: '20px' }}>
             <span>Privacy Standard</span>
-            <span>Terms of Multi-Tenant Access</span>
-            <span>Security Interception Protocol</span>
+            <span>Terms of Service</span>
+            <span>Data Security Protocol</span>
           </div>
         </div>
       </div>
