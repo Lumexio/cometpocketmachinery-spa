@@ -37,8 +37,11 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
-      - name: Build & SPA Route Fallback
-        run: npm run build && cp dist/index.html dist/404.html
+      - name: Build, SPA Route Fallback & CNAME Safeguard
+        run: |
+          npm run build
+          cp dist/index.html dist/404.html
+          if [ -f CNAME ]; then cp CNAME dist/CNAME; echo "✔ Root CNAME copied to dist/"; fi
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
