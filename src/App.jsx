@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Innovations from './pages/Innovations';
-import Profile from './pages/Profile';
+
 import Settings from './pages/Settings';
 import './index.css';
 
@@ -17,7 +17,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/innovations" element={<Innovations />} />
-            <Route path="/profile" element={<Profile />} />
+
             <Route path="/settings" element={<Settings />} />
           </Routes>
         </div>

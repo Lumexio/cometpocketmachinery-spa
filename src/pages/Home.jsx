@@ -31,15 +31,6 @@ const projects = [
     color: '#00b368'
   },
   {
-    title: 'Playlist Downloader Utility',
-    badge: 'Media Suite • LIVE',
-    domain: 'playlistdownloader.online',
-    url: 'https://playlistdownloader.online',
-    desc: 'High-speed audio curation and extraction utility. Offers real-time playlist parsing across major streaming providers with audio formats up to lossless FLAC and priority batch queueing.',
-    tags: ['Audio Curation', 'High-Speed FLAC/MP3', 'Batch Downloads', 'Offline Playback'],
-    color: '#7f5af0'
-  },
-  {
     title: 'Lumexio Engineering Hub',
     badge: 'Founder Brand • LIVE',
     domain: 'lumexio.site',
@@ -237,25 +228,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CALL TO ACTION */}
-      <section style={{ padding: '90px 0', textAlign: 'center' }}>
-        <div className="container" style={{ maxWidth: '800px' }}>
-          <div className="glass-card" style={{ padding: '60px 40px', background: 'radial-gradient(circle at center, rgba(230,36,41,0.25) 0%, rgba(22,22,28,0.85) 100%)', border: '1px solid rgba(230,36,41,0.5)' }}>
-            <h2 style={{ fontSize: '2.4rem', marginBottom: '16px' }}>Ready to Scale with Comet Pocket Machinery?</h2>
-            <p style={{ color: '#ccc', fontSize: '1.1rem', marginBottom: '36px', maxWidth: '600px', margin: '0 auto 36px' }}>
-              Access our production SaaS suites, review our architectural documentation, or join our multidisciplinary engineering teams.
-            </p>
-            <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link to="/profile" className="btn-primary" style={{ padding: '14px 30px', fontSize: '1rem' }}>
-                Manage Enterprise Profile <ArrowRight size={18} />
-              </Link>
-              <a href="https://lumexio.site" target="_blank" rel="noreferrer" className="btn-secondary" style={{ padding: '14px 30px', fontSize: '1rem' }}>
-                Contact Principal Architect
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
 
     </div>
   );

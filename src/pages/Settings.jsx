@@ -151,65 +151,7 @@ export default function Settings() {
           </div>
         </div>
 
-        {/* Section 3: Telemetry & Sync Protocol */}
-        <div className="glass-card">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '18px', color: '#fff' }}>
-            <Cpu size={24} color="var(--primary)" />
-            <h2 style={{ fontSize: '1.6rem' }}>Sync & Cloud Telemetry</h2>
-          </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', fontSize: '0.95rem' }}>
-            
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingBottom: '16px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
-              <div>
-                <strong style={{ color: '#fff', display: 'block', marginBottom: '4px' }}>Live Real-Time Order Sync</strong>
-                <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>Immediately sync waiter PIN tablet orders to cashier POS screens in MerchantGo.</span>
-              </div>
-              <button 
-                type="button"
-                onClick={() => setAutoSync(!autoSync)}
-                style={{
-                  padding: '8px 16px',
-                  borderRadius: '999px',
-                  border: 'none',
-                  fontWeight: 700,
-                  fontSize: '0.8rem',
-                  cursor: 'pointer',
-                  backgroundColor: autoSync ? 'var(--primary)' : 'rgba(255,255,255,0.1)',
-                  color: '#fff',
-                  transition: '0.2s'
-                }}
-              >
-                {autoSync ? 'ENABLED' : 'DISABLED'}
-              </button>
-            </div>
-
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <div>
-                <strong style={{ color: '#fff', display: 'block', marginBottom: '4px' }}>Automated Audit Telemetry Logging</strong>
-                <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>Append transaction history and diagnostic metrics to IndexedDB & VPS logs on every operation.</span>
-              </div>
-              <button 
-                type="button"
-                onClick={() => setTelemetry(!telemetry)}
-                style={{
-                  padding: '8px 16px',
-                  borderRadius: '999px',
-                  border: 'none',
-                  fontWeight: 700,
-                  fontSize: '0.8rem',
-                  cursor: 'pointer',
-                  backgroundColor: telemetry ? '#00ff66' : 'rgba(255,255,255,0.1)',
-                  color: telemetry ? '#000' : '#fff',
-                  transition: '0.2s'
-                }}
-              >
-                {telemetry ? 'ACTIVE' : 'MUTED'}
-              </button>
-            </div>
-
-          </div>
-        </div>
 
       </div>
 

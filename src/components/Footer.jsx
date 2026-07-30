@@ -41,7 +41,7 @@ export default function Footer() {
               <li><a href="https://stockmachine.online" target="_blank" rel="noreferrer" className="hover:text-white transition-all">StockMachine Inventory</a></li>
               <li><a href="https://merchantgo.store" target="_blank" rel="noreferrer" className="hover:text-white transition-all">MerchantGo POS & Cashout</a></li>
               <li><a href="https://quiromedic.site" target="_blank" rel="noreferrer" className="hover:text-white transition-all">QuiroMedic Health Records</a></li>
-              <li><a href="https://playlistdownloader.online" target="_blank" rel="noreferrer" className="hover:text-white transition-all">Playlist Downloader Suite</a></li>
+
             </ul>
           </div>
 
@@ -52,7 +52,7 @@ export default function Footer() {
               <li><span>Cloud Inventory System</span></li>
               <li><span>Multi-Organization POS</span></li>
               <li><span>Clinical Health Suite</span></li>
-              <li><span>High-Speed Audio Media</span></li>
+
             </ul>
           </div>
 
@@ -62,7 +62,7 @@ export default function Footer() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.9rem' }}>
               <li><a href="https://lumexio.site" target="_blank" rel="noreferrer" style={{ color: 'var(--primary)', fontWeight: 600 }}>Lumexio Architecture</a></li>
               <li><span>Global HQ & R&D Labs</span></li>
-              <li><span>Support: hi@cometpocket.online</span></li>
+              <li><span>Support: lumexio.dev@gmail.com</span></li>
             </ul>
           </div>
 

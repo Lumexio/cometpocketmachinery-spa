@@ -57,21 +57,7 @@ export default function Header() {
 
         {/* Standard Brand Nav Header: User Avatar Chip + Settings Gear Icon */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-          <Link to="/profile" title="Account Profile & Billing" style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '10px',
-            padding: '6px 14px',
-            background: 'rgba(255,255,255,0.06)',
-            border: '1px solid var(--border-glass)',
-            borderRadius: '999px',
-            transition: '0.2s all'
-          }} className="hover:border-glow">
-            <div style={{ width: '26px', height: '26px', borderRadius: '50%', background: 'var(--primary)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <User size={14} color="#fff" />
-            </div>
-            <span style={{ fontSize: '0.85rem', fontWeight: 600, fontFamily: 'var(--font-heading)' }}>Enterprise Admin</span>
-          </Link>
+
 
           <Link to="/settings" title="Application Settings" style={{
             padding: '10px',

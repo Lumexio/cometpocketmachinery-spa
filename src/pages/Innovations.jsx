@@ -40,19 +40,6 @@ const roadmapInnovations = [
       'Streamlined digital workflows for single doctors & clinics'
     ],
     accent: '#00b368'
-  },
-  {
-    title: 'Playlist Studio Cloud Accelerator DL-X',
-    category: 'Future Roadmap (Studio Media)',
-    status: 'R&D Concept',
-    desc: 'A specialized high-throughput network audio routing architecture designed for commercial broadcast studios running Playlist Downloader.',
-    features: [
-      'Ultra-fast lossless studio FLAC & WAV extraction algorithms',
-      'Gigabit redundant cloud streaming buffer management',
-      'Multi-room simultaneous studio playlist syncing',
-      'Zero-jitter acoustic streaming matrix distribution'
-    ],
-    accent: '#7f5af0'
   }
 ];
 
@@ -146,18 +133,7 @@ export default function Innovations() {
         ))}
       </div>
 
-      {/* R&D Callout Banner */}
-      <div className="glass-card" style={{ marginTop: '70px', background: 'radial-gradient(circle at left, rgba(0,255,102,0.12) 0%, rgba(22,22,28,0.85) 100%)', border: '1px solid rgba(0,255,102,0.3)', padding: '50px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '30px' }}>
-        <div style={{ maxWidth: '650px' }}>
-          <h3 style={{ fontSize: '2rem', marginBottom: '12px', color: '#fff' }}>Need Scalable SaaS Solutions Today?</h3>
-          <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.6 }}>
-            Deploy StockMachine, MerchantGo, QuiroMedic, and Playlist Downloader directly across your existing cloud infrastructure or try our generous free ecosystem tools instantly!
-          </p>
-        </div>
-        <a href="#portfolio" className="btn-primary" style={{ background: '#00ff66', color: '#000', fontWeight: 700 }}>
-          Deploy Active Software SaaS
-        </a>
-      </div>
+
 
     </div>
   );
