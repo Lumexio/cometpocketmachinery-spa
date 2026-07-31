@@ -191,7 +191,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '30px' }} className="grid-3">
+          <div style={{ display: 'grid', gap: '30px' }} className="grid-3">
             
             <div className="glass-card" style={{ background: 'rgba(255,255,255,0.02)' }}>
               <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(230,36,41,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px', border: '1px solid rgba(230,36,41,0.3)' }}>

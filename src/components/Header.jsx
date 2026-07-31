@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Rocket, Settings, User, Compass, Cpu, ShieldCheck } from 'lucide-react';
+import { Rocket, Settings, User, Compass, Cpu, ShieldCheck, Menu, X } from 'lucide-react';
 
 export default function Header() {
   const location = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <header style={{
@@ -42,8 +43,8 @@ export default function Header() {
           </div>
         </Link>
 
-        {/* Center Navigation Links */}
-        <nav style={{ display: 'flex', gap: '28px', alignItems: 'center', fontFamily: 'var(--font-heading)', fontWeight: 600, fontSize: '0.95rem' }}>
+        {/* Center Navigation Links (Desktop) */}
+        <nav className="desktop-nav" style={{ display: 'flex', gap: '28px', alignItems: 'center', fontFamily: 'var(--font-heading)', fontWeight: 600, fontSize: '0.95rem' }}>
           <Link to="/" style={{ color: location.pathname === '/' ? 'var(--primary)' : 'var(--text-main)', transition: '0.2s' }}>
             Ecosystem Portfolio
           </Link>
@@ -55,10 +56,8 @@ export default function Header() {
           </a>
         </nav>
 
-        {/* Standard Brand Nav Header: User Avatar Chip + Settings Gear Icon */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-
-
+        {/* Standard Brand Nav Header (Desktop) */}
+        <div className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
           <Link to="/settings" title="Application Settings" style={{
             padding: '10px',
             background: 'rgba(255,255,255,0.05)',
@@ -73,7 +72,33 @@ export default function Header() {
           </Link>
         </div>
 
+        {/* Mobile Hamburger Toggle */}
+        <button 
+          className="mobile-menu-btn" 
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
+
+      {/* Mobile Navigation Dropdown */}
+      {isMobileMenuOpen && (
+        <div className="mobile-nav-overlay">
+          <Link to="/" onClick={() => setIsMobileMenuOpen(false)} style={{ color: location.pathname === '/' ? 'var(--primary)' : 'var(--text-main)', fontSize: '1.2rem', fontWeight: 600 }}>
+            Ecosystem Portfolio
+          </Link>
+          <Link to="/innovations" onClick={() => setIsMobileMenuOpen(false)} style={{ color: location.pathname === '/innovations' ? 'var(--primary)' : 'var(--text-main)', fontSize: '1.2rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Cpu size={20} /> Roadmap & Labs
+          </Link>
+          <a href="https://lumexio.site" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)', fontSize: '1.2rem', fontWeight: 600 }}>
+            Founder Architect
+          </a>
+          <div style={{ height: '1px', background: 'var(--border-glass)', margin: '10px 0' }} />
+          <Link to="/settings" onClick={() => setIsMobileMenuOpen(false)} style={{ color: 'var(--text-main)', fontSize: '1.2rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Settings size={20} /> Application Settings
+          </Link>
+        </div>
+      )}
     </header>
   );
 }
