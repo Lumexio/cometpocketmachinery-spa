@@ -11,7 +11,7 @@ export default function Footer() {
       color: 'var(--text-muted)'
     }}>
       <div className="container">
-        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: '40px', marginBottom: '40px' }}>
+        <div className="footer-grid">
           
           {/* Brand Info */}
           <div>
@@ -68,14 +68,7 @@ export default function Footer() {
 
         </div>
 
-        <div style={{
-          borderTop: '1px solid rgba(255,255,255,0.05)',
-          paddingTop: '24px',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          fontSize: '0.85rem'
-        }}>
+        <div className="footer-bottom-flex">
           <p>© {new Date().getFullYear()} Comet Pocket Machinery Ecosystem. All production standards enforced.</p>
           <div style={{ display: 'flex', gap: '20px' }}>
             <span>Privacy Standard</span>

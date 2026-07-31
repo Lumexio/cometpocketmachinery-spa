@@ -232,3 +232,32 @@ a {
   gap: 20px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
+
+/* Footer Structural Classes */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer-bottom-flex {
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+  .footer-bottom-flex {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+  }
+}
+
