@@ -75,7 +75,7 @@ export default function Home() {
           </div>
 
           {/* Core Architectural Stats Bar */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px', marginTop: '70px', padding: '24px', background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-glass)' }}>
+          <div className="hero-stats-grid">
             <div>
               <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: '#fff', fontFamily: 'var(--font-heading)' }}>5 Live</span>
               <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Production Flagships</span>
