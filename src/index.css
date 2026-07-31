@@ -183,9 +183,22 @@ a {
   margin-bottom: 12px;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments & Mobile Optimizations (Phase 0) */
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    position: relative;
+  }
   .grid-3 {
     grid-template-columns: 1fr;
+  }
+  h1 { font-size: 2.2rem !important; line-height: 1.2 !important; }
+  h2 { font-size: 1.8rem !important; line-height: 1.2 !important; }
+  h3 { font-size: 1.5rem !important; line-height: 1.2 !important; }
+  .btn-primary, .btn-secondary {
+    width: 100% !important;
+    margin-bottom: 12px;
+    justify-content: center;
   }
 }
