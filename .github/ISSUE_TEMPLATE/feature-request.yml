@@ -1,0 +1,35 @@
+name: Feature request
+description: Propose an improvement to the marketing SPA.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What user need should this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the smallest useful outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: routes
+    attributes:
+      label: Affected routes and links
+      description: Include pages, navigation, product URLs, or assets that must stay aligned.
+  - type: textarea
+    id: accessibility
+    attributes:
+      label: Responsive and accessibility considerations
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues for a similar request.
+          required: true

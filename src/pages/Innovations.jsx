@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cpu, Radio, Shield, Zap, Terminal, Server, Wifi, Activity, CheckCircle2, Cloud, Sparkles } from 'lucide-react';
+import { CheckCircle2, Cloud, Sparkles } from 'lucide-react';
 
 const roadmapInnovations = [
   {
@@ -18,8 +18,8 @@ const roadmapInnovations = [
   {
     title: 'StockMachine Cloud Sensor Bridge',
     category: 'Future Roadmap (Inventory)',
-    status: 'R&D Prototype',
-    desc: 'Automated inventory verification telemetry designed to sync directly with stockmachine.online workspaces via zero-latency webhooks.',
+    status: 'Concept Only',
+    desc: 'An exploratory inventory sensor concept. No StockMachine webhook integration is currently published.',
     features: [
       'Automated stock depletion estimation alerts via REST API',
       'Instant low-stock warning triggers sent to manager dashboards',
@@ -31,8 +31,8 @@ const roadmapInnovations = [
   {
     title: 'QuiroMedic Clinical Telemetry Sync',
     category: 'Future Roadmap (Healthcare)',
-    status: 'R&D Prototype',
-    desc: 'A future clinical synchronization module to automatically relay vitals and diagnostic telemetry into QuiroMedic electronic health records.',
+    status: 'Concept Only',
+    desc: 'An exploratory clinical telemetry concept. No QuiroMedic device integration is currently published.',
     features: [
       'Secure diagnostic vital metric ingestion to clinical charts',
       'End-to-end encrypted medical data storage in the cloud',
@@ -55,7 +55,7 @@ export default function Innovations() {
           Software Supremacy & Our <span style={{ color: '#00ff66' }}>Future Roadmap</span>
         </h1>
         <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', lineHeight: 1.6 }}>
-          At <strong>Comet Pocket Machinery</strong>, our active product lineup delivers immediate, zero-friction software SaaS platforms and generous free ecosystem utilities today. Explore how our R&D engineering facilities are also mapping out physical sensor concepts for our future strategic path!
+          Current products have different hosting and release states. The concepts below are roadmap ideas only and are not available integrations.
         </p>
       </div>
 
@@ -65,22 +65,22 @@ export default function Innovations() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#ff4d4d', fontWeight: 800, fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '12px' }}>
             <Sparkles size={16} /> Present-Day Active Products
           </div>
-          <h2 style={{ fontSize: '2.2rem', color: '#fff', marginBottom: '14px' }}>100% Cloud SaaS Platforms & Free Tools</h2>
+          <h2 style={{ fontSize: '2.2rem', color: '#fff', marginBottom: '14px' }}>Hosted Apps, GitHub Releases & Source Builds</h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: 1.6 }}>
-            No specialized hardware purchases or complex installations required! Our entire portfolio—from MerchantGo POS to StockMachine inventory—is ready to deploy immediately across your existing phones, tablets, laptops, and web browsers.
+            Browser products are linked directly. StockMachine publishes Windows, Linux, and Android downloads; other native clients remain source-only unless their product page states otherwise.
           </p>
         </div>
         <div style={{ background: 'rgba(0,0,0,0.5)', padding: '24px', borderRadius: '16px', border: '1px solid var(--border-glass)' }}>
-          <h4 style={{ color: '#fff', marginBottom: '14px', fontSize: '1.1rem' }}>Active Cloud SaaS Capabilities:</h4>
+          <h4 style={{ color: '#fff', marginBottom: '14px', fontSize: '1.1rem' }}>Current Product Boundaries:</h4>
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.95rem', color: '#ccc' }}>
             <li style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <CheckCircle2 size={16} color="#00ff66" /> <span>Real-Time Device Synchronization Across All Stations</span>
+              <CheckCircle2 size={16} color="#00ff66" /> <span>Appwrite identity only where configured</span>
             </li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <CheckCircle2 size={16} color="#00ff66" /> <span>Secure Cloud Backup & Simple Subscription Billing</span>
+              <CheckCircle2 size={16} color="#00ff66" /> <span>Product domain data remains on VPS databases</span>
             </li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <CheckCircle2 size={16} color="#00ff66" /> <span>Generous Free Solo Starters & Express Workflows</span>
+              <CheckCircle2 size={16} color="#00ff66" /> <span>No managed backup or paid-support promise</span>
             </li>
           </ul>
         </div>
@@ -122,7 +122,7 @@ export default function Innovations() {
 
             <div style={{ padding: '16px', background: 'rgba(0,0,0,0.3)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', fontSize: '0.85rem' }}>
-                <Cloud size={16} color="#00ff66" /> Software SaaS Connect Ready
+                <Cloud size={16} color="#00ff66" /> Concept only — no live integration
               </div>
               <span style={{ fontSize: '0.82rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>
                 Future Roadmap Path

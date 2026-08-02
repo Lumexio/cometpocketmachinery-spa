@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, ShieldCheck, Zap, Layers, Server, Activity, ArrowRight, Cpu, Terminal, Sparkles, CheckCircle2 } from 'lucide-react';
+import { ExternalLink, ShieldCheck, Zap, Layers, ArrowRight, Cpu, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const projects = [
@@ -8,8 +8,8 @@ const projects = [
     badge: 'Flagship System • LIVE',
     domain: 'stockmachine.online',
     url: 'https://stockmachine.online',
-    desc: 'Our enterprise flagship inventory management platform. Track products across multiple warehouses, monitor real-time stock movements, and sync across desktop, web, and mobile devices.',
-    tags: ['Inventory System', 'Multi-Location', 'Desktop & Mobile', 'Offline Sync'],
+    desc: 'Inventory management with a hosted web app and published GitHub Release downloads for Windows, Linux, and Android. Appwrite handles identity while domain data remains in the VPS backend.',
+    tags: ['Inventory System', 'VPS Domain Data', 'GitHub Releases'],
     color: '#e62429'
   },
   {
@@ -17,8 +17,8 @@ const projects = [
     badge: 'Core Platform • LIVE',
     domain: 'merchantgo.store',
     url: 'https://merchantgo.store',
-    desc: 'Next-generation restaurant and bar point-of-sale suite. Features instant waiter PIN login, live table order synchronization across stations, and rapid Z-Report shift settlements ("Cortes de Caja").',
-    tags: ['Restaurant POS', 'Rapid Checkout', 'Shared Tablet PIN', 'Shift Z-Reports'],
+    desc: 'Restaurant and bar point-of-sale workflows with a hosted web application. Desktop and tablet clients remain source builds without public installers.',
+    tags: ['Restaurant POS', 'Hosted Web App', 'Source Clients', 'No Public Installers'],
     color: '#ff6b00'
   },
   {
@@ -26,8 +26,8 @@ const projects = [
     badge: 'Clinical SaaS • LIVE',
     domain: 'quiromedic.site',
     url: 'https://quiromedic.site',
-    desc: 'High-security patient health record and diagnostic monitoring suite for medical professionals and multidisciplinary clinical centers. Includes flexible onboarding for individual specialists or multi-doctor clinics.',
-    tags: ['Patient Records', 'Clinical Diagnostics', 'Data Privacy', 'Solo & Clinic Plans'],
+    desc: 'A VPS-hosted browser application for tenant-scoped patient records and body measurements. Native installers and paid clinical support tiers are not published.',
+    tags: ['Patient Records', 'Browser App', 'VPS Database', 'No Native Apps'],
     color: '#00b368'
   },
   {
@@ -35,7 +35,7 @@ const projects = [
     badge: 'Founder Brand • LIVE',
     domain: 'lumexio.site',
     url: 'https://lumexio.site',
-    desc: 'The personal architecture showcase and technical command hub of Principal Architect Lumexio. Oversees platform design, cloud reliability, and UI/UX excellence across all brand endeavors.',
+    desc: 'The personal architecture showcase and technical portfolio of Principal Architect Lumexio.',
     tags: ['System Architecture', 'Software Portfolio', 'Technical Excellence', 'Principal Command'],
     color: '#2cb67d'
   }
@@ -62,12 +62,12 @@ export default function Home() {
           </h1>
 
           <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', maxWidth: '780px', margin: '0 auto 40px', lineHeight: 1.6 }}>
-            Welcome to the definitive portal of <strong>Comet Pocket Machinery</strong>. We engineer production-ready, highly synchronized software SaaS platforms and intuitive operational tools that power modern restaurants, clinical facilities, and enterprise inventories.
+            <strong>Comet Pocket Machinery</strong> publishes operational web applications and client software for restaurants, clinical practices, inventory teams, and local media workflows.
           </p>
 
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="#portfolio" className="btn-primary" style={{ fontSize: '1.05rem', padding: '15px 32px' }}>
-              Explore Flagship SaaS <ArrowRight size={18} />
+              Explore Products <ArrowRight size={18} />
             </a>
             <Link to="/innovations" className="btn-secondary" style={{ fontSize: '1.05rem', padding: '15px 32px' }}>
               <Cpu size={18} color="var(--primary)" /> Roadmap & R&D Labs
@@ -77,20 +77,20 @@ export default function Home() {
           {/* Core Architectural Stats Bar */}
           <div className="hero-stats-grid">
             <div>
-              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: '#fff', fontFamily: 'var(--font-heading)' }}>5 Live</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Production Flagships</span>
+              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: '#fff', fontFamily: 'var(--font-heading)' }}>4 Linked</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Product Sites</span>
             </div>
             <div>
-              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: 'var(--primary)', fontFamily: 'var(--font-heading)' }}>99.99%</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Cloud Uptime</span>
+              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: 'var(--primary)', fontFamily: 'var(--font-heading)' }}>VPS</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Domain Data</span>
             </div>
             <div>
-              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: '#fff', fontFamily: 'var(--font-heading)' }}>100%</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Secure Data Isolation</span>
+              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: '#fff', fontFamily: 'var(--font-heading)' }}>Identity</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Appwrite Where Used</span>
             </div>
             <div>
-              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: '#00b368', fontFamily: 'var(--font-heading)' }}><Activity size={24} style={{ display: 'inline' }} /> Instant</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Real-Time Device Sync</span>
+              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: '#00b368', fontFamily: 'var(--font-heading)' }}>Varies</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Release Availability</span>
             </div>
           </div>
 
@@ -105,7 +105,7 @@ export default function Home() {
             <span className="badge">Project Portfolio & Workspace Map</span>
             <h2 style={{ fontSize: '2.6rem', marginBottom: '16px' }}>Cohesive Engineering Flagships</h2>
             <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem' }}>
-              Every solution within our workspace inherits established design tokens, strict row-level security, and containerized deployment pipelines from our reference blueprint.
+              Availability differs by product. Each card states whether the product is browser-hosted, released through GitHub, or still source-only.
             </p>
           </div>
 
@@ -197,9 +197,9 @@ export default function Home() {
               <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(230,36,41,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px', border: '1px solid rgba(230,36,41,0.3)' }}>
                 <ShieldCheck size={24} color="var(--primary)" />
               </div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>1. Built for High Reliability</h3>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>1. Verifiable Availability</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                Every solution in our suite is engineered for rock-solid stability. Our cloud deployment platforms and offline modes ensure uninterrupted daily service during your busiest operating hours.
+                Product pages distinguish hosted web applications, published GitHub Releases, and source-only clients instead of promising unpublished installers.
               </p>
             </div>
 
@@ -207,9 +207,9 @@ export default function Home() {
               <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(255,107,0,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px', border: '1px solid rgba(255,107,0,0.3)' }}>
                 <Layers size={24} color="#ff6b00" />
               </div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>2. Ironclad Data Privacy</h3>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>2. Explicit Data Boundaries</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                Whether handling confidential clinical records in QuiroMedic or daily shift financial ledgers in MerchantGo, all customer data accounts are strictly isolated and securely encrypted in the cloud.
+                Appwrite is used for identity where configured. Product domain records remain in product-owned VPS databases; managed-cloud durability and backups are not implied.
               </p>
             </div>
 
@@ -217,9 +217,9 @@ export default function Home() {
               <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(0,179,104,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px', border: '1px solid rgba(0,179,104,0.3)' }}>
                 <Zap size={24} color="#00b368" />
               </div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>3. Seamless Ecosystem Strategy</h3>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>3. Separate Product Boundaries</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                We focus each solution on its dedicated strengths. MerchantGo excels at high-speed shift sales and cashout settlements ("El Corte"), while StockMachine provides advanced inventory tracking across your enterprise.
+                MerchantGo, StockMachine, QuiroMedic, and Playlist Downloader are separate products. Cross-product integrations are not advertised unless they are implemented.
               </p>
             </div>
 
