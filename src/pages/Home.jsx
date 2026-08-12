@@ -1,6 +1,5 @@
 import React from 'react';
-import { ExternalLink, ShieldCheck, Zap, Layers, ArrowRight, Cpu, Sparkles } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { ExternalLink, ArrowRight, Activity } from 'lucide-react';
 
 const projects = [
   {
@@ -46,69 +45,37 @@ export default function Home() {
     <div className="animate-fade-in">
       
       {/* HERO SECTION */}
-      <section style={{ padding: '90px 0 70px', position: 'relative', textAlign: 'center' }}>
-        <div className="container" style={{ maxWidth: '960px' }}>
+      <section style={{ padding: '90px 0 40px', position: 'relative', textAlign: 'center' }}>
+        <div className="container" style={{ maxWidth: '800px' }}>
           
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', background: 'rgba(230, 36, 41, 0.15)', borderRadius: '999px', border: '1px solid rgba(230, 36, 41, 0.4)', marginBottom: '24px' }}>
-            <Sparkles size={16} color="var(--primary)" />
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', background: 'rgba(0, 179, 104, 0.15)', borderRadius: '999px', border: '1px solid rgba(0, 179, 104, 0.4)', marginBottom: '24px' }}>
+            <Activity size={16} color="#00b368" />
             <span style={{ fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--text-main)' }}>
-              Next-Gen Enterprise Ecosystem & Roadmap Innovations
+              Comet Pocket Machinery
             </span>
           </div>
 
-          <h1 style={{ fontSize: '4.2rem', fontWeight: 800, letterSpacing: '-0.03em', marginBottom: '24px', background: 'linear-gradient(135deg, #ffffff 30%, var(--text-muted) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            Practical. High-Utility.<br />
-            <span style={{ color: 'var(--primary)', WebkitTextFillColor: 'var(--primary)' }}>Technological Supremacy.</span>
+          <h1 style={{ fontSize: '3.5rem', fontWeight: 800, letterSpacing: '-0.03em', marginBottom: '20px', color: '#ffffff' }}>
+            Software Ecosystem for Business, Clinical, and Retail Operations
           </h1>
 
-          <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', maxWidth: '780px', margin: '0 auto 40px', lineHeight: 1.6 }}>
-            <strong>Comet Pocket Machinery</strong> publishes operational web applications and client software for restaurants, clinical practices, inventory teams, and local media workflows.
+          <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto 40px', lineHeight: 1.6 }}>
+            Explore our published web applications, client software, and operational SaaS products.
           </p>
 
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
             <a href="#portfolio" className="btn-primary" style={{ fontSize: '1.05rem', padding: '15px 32px' }}>
-              Explore Products <ArrowRight size={18} />
+              View Active Projects <ArrowRight size={18} />
             </a>
-            <Link to="/innovations" className="btn-secondary" style={{ fontSize: '1.05rem', padding: '15px 32px' }}>
-              <Cpu size={18} color="var(--primary)" /> Roadmap & R&D Labs
-            </Link>
-          </div>
-
-          {/* Core Architectural Stats Bar */}
-          <div className="hero-stats-grid">
-            <div>
-              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: '#fff', fontFamily: 'var(--font-heading)' }}>4 Linked</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Product Sites</span>
-            </div>
-            <div>
-              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: 'var(--primary)', fontFamily: 'var(--font-heading)' }}>VPS</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Domain Data</span>
-            </div>
-            <div>
-              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: '#fff', fontFamily: 'var(--font-heading)' }}>Identity</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Appwrite Where Used</span>
-            </div>
-            <div>
-              <span style={{ display: 'block', fontSize: '1.8rem', fontWeight: 800, color: '#00b368', fontFamily: 'var(--font-heading)' }}>Varies</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Release Availability</span>
-            </div>
           </div>
 
         </div>
       </section>
 
       {/* PORTFOLIO SHOWCASE SECTION */}
-      <section id="portfolio" style={{ padding: '60px 0 80px' }}>
+      <section id="portfolio" style={{ padding: '40px 0 80px' }}>
         <div className="container">
           
-          <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 50px' }}>
-            <span className="badge">Project Portfolio & Workspace Map</span>
-            <h2 style={{ fontSize: '2.6rem', marginBottom: '16px' }}>Cohesive Engineering Flagships</h2>
-            <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem' }}>
-              Availability differs by product. Each card states whether the product is browser-hosted, released through GitHub, or still source-only.
-            </p>
-          </div>
-
           <div className="grid-3">
             {projects.map((p, i) => (
               <div key={i} className="glass-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderTop: `3px solid ${p.color}` }}>
@@ -160,74 +127,10 @@ export default function Home() {
                 </div>
               </div>
             ))}
-
-            {/* Teaser card for Innovations & Future Hardware Roadmap */}
-            <div className="glass-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', borderTop: '3px solid #00ff66', background: 'linear-gradient(180deg, rgba(22,22,28,0.7) 0%, rgba(0,255,102,0.05) 100%)' }}>
-              <Cpu size={54} color="#00ff66" style={{ marginBottom: '20px' }} className="animate-pulse" />
-              <span className="badge" style={{ background: 'rgba(0,255,102,0.15)', color: '#00ff66', borderColor: 'rgba(0,255,102,0.3)' }}>Future R&D Roadmap</span>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '12px' }}>Pocket Machinery Labs</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '24px', maxWidth: '280px' }}>
-                While our active focus is entirely on seamless SaaS tools and free utilities today, explore our future R&D roadmap for IoT machinery and physical sensors.
-              </p>
-              <Link to="/innovations" className="btn-secondary" style={{ width: '100%', justifyContent: 'center', borderColor: '#00ff66', color: '#fff' }}>
-                View Roadmap & Labs <ArrowRight size={16} />
-              </Link>
-            </div>
-
           </div>
 
         </div>
       </section>
-
-      {/* CORE BRAND TENETS & ARCHITECTURE STANDARDS */}
-      <section style={{ padding: '60px 0', background: 'rgba(0,0,0,0.4)', borderTop: '1px solid var(--border-glass)', borderBottom: '1px solid var(--border-glass)' }}>
-        <div className="container">
-          
-          <div style={{ textAlign: 'center', maxWidth: '680px', margin: '0 auto 50px' }}>
-            <span className="badge">Ecosystem Standards</span>
-            <h2 style={{ fontSize: '2.3rem', marginBottom: '14px' }}>Enforced Architectural Directives</h2>
-            <p style={{ color: 'var(--text-muted)' }}>
-              How Comet Pocket Machinery maintains enterprise reliability and seamless developer collaboration across our monorepos.
-            </p>
-          </div>
-
-          <div style={{ display: 'grid', gap: '30px' }} className="grid-3">
-            
-            <div className="glass-card" style={{ background: 'rgba(255,255,255,0.02)' }}>
-              <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(230,36,41,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px', border: '1px solid rgba(230,36,41,0.3)' }}>
-                <ShieldCheck size={24} color="var(--primary)" />
-              </div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>1. Verifiable Availability</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                Product pages distinguish hosted web applications, published GitHub Releases, and source-only clients instead of promising unpublished installers.
-              </p>
-            </div>
-
-            <div className="glass-card" style={{ background: 'rgba(255,255,255,0.02)' }}>
-              <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(255,107,0,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px', border: '1px solid rgba(255,107,0,0.3)' }}>
-                <Layers size={24} color="#ff6b00" />
-              </div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>2. Explicit Data Boundaries</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                Appwrite is used for identity where configured. Product domain records remain in product-owned VPS databases; managed-cloud durability and backups are not implied.
-              </p>
-            </div>
-
-            <div className="glass-card" style={{ background: 'rgba(255,255,255,0.02)' }}>
-              <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(0,179,104,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px', border: '1px solid rgba(0,179,104,0.3)' }}>
-                <Zap size={24} color="#00b368" />
-              </div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '10px' }}>3. Separate Product Boundaries</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                MerchantGo, StockMachine, QuiroMedic, and Playlist Downloader are separate products. Cross-product integrations are not advertised unless they are implemented.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
 
     </div>
   );
