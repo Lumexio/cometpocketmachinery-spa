@@ -12,7 +12,7 @@ export default function Footer() {
     }}>
       <div className="container">
         <div className="footer-grid">
-          
+
           {/* Brand Info */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', color: 'var(--text-main)' }}>
@@ -72,7 +72,7 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} Comet Pocket Machinery Ecosystem.</p>
           <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
             <span>Availability varies by product</span>
-            <a href="https://buy.stripe.com/REPLACE_WITH_PAYMENT_LINK" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--text-main)', opacity: 0.7, textDecoration: 'none', transition: 'all 0.3s ease' }} onMouseOver={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.color = '#ff9800'; }} onMouseOut={e => { e.currentTarget.style.opacity = '0.7'; e.currentTarget.style.color = 'var(--text-main)'; }}>
+            <a href="https://buy.stripe.com/aFa3cw4SR4iKerM8TgdnW00" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '6px', color: 'var(--text-main)', opacity: 0.7, textDecoration: 'none', transition: 'all 0.3s ease' }} onMouseOver={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.color = '#ff9800'; }} onMouseOut={e => { e.currentTarget.style.opacity = '0.7'; e.currentTarget.style.color = 'var(--text-main)'; }}>
               <Coffee size={16} />
               <span style={{ fontSize: '0.85rem' }}>Buy the dev a coffee</span>
             </a>
