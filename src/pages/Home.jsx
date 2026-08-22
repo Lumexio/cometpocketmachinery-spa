@@ -7,7 +7,7 @@ const projects = [
     badge: 'Flagship System • LIVE',
     domain: 'stockmachine.online',
     url: 'https://stockmachine.online',
-    desc: 'Inventory management with a hosted web app and published GitHub Release downloads for Windows, Linux, and Android. Appwrite handles identity while domain data remains in the VPS backend.',
+    desc: 'Inventory management Software as a service',
     tags: ['Inventory System', 'VPS Domain Data', 'GitHub Releases'],
     color: '#e62429'
   },
@@ -16,7 +16,7 @@ const projects = [
     badge: 'Core Platform • LIVE',
     domain: 'merchantgo.store',
     url: 'https://merchantgo.store',
-    desc: 'Restaurant and bar point-of-sale workflows with a hosted web application. Desktop and tablet clients remain source builds without public installers.',
+    desc: 'Restaurant, bar and generic point-of-sale',
     tags: ['Restaurant POS', 'Hosted Web App', 'Source Clients', 'No Public Installers'],
     color: '#ff6b00'
   },
@@ -25,8 +25,8 @@ const projects = [
     badge: 'Clinical SaaS • LIVE',
     domain: 'quiromedic.site',
     url: 'https://quiromedic.site',
-    desc: 'A VPS-hosted browser application for tenant-scoped patient records and body measurements. Native installers and paid clinical support tiers are not published.',
-    tags: ['Patient Records', 'Browser App', 'VPS Database', 'No Native Apps'],
+    desc: 'A web application for patient records and body measurements.',
+    tags: ['Patient Records', 'Browser App', 'No Native Apps'],
     color: '#00b368'
   },
   {
@@ -43,11 +43,11 @@ const projects = [
 export default function Home() {
   return (
     <div className="animate-fade-in">
-      
+
       {/* HERO SECTION */}
       <section style={{ padding: '90px 0 40px', position: 'relative', textAlign: 'center' }}>
         <div className="container" style={{ maxWidth: '800px' }}>
-          
+
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', background: 'rgba(0, 179, 104, 0.15)', borderRadius: '999px', border: '1px solid rgba(0, 179, 104, 0.4)', marginBottom: '24px' }}>
             <Activity size={16} color="#00b368" />
             <span style={{ fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--text-main)' }}>
@@ -56,11 +56,11 @@ export default function Home() {
           </div>
 
           <h1 style={{ fontSize: '3.5rem', fontWeight: 800, letterSpacing: '-0.03em', marginBottom: '20px', color: '#ffffff' }}>
-            Software Ecosystem for Business, Clinical, and Retail Operations
+            We solve your needs and we point to the stars
           </h1>
 
           <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto 40px', lineHeight: 1.6 }}>
-            Explore our published web applications, client software, and operational SaaS products.
+            Explore our products ecosystem.
           </p>
 
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
@@ -75,7 +75,7 @@ export default function Home() {
       {/* PORTFOLIO SHOWCASE SECTION */}
       <section id="portfolio" style={{ padding: '40px 0 80px' }}>
         <div className="container">
-          
+
           <div className="grid-3">
             {projects.map((p, i) => (
               <div key={i} className="glass-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderTop: `3px solid ${p.color}` }}>

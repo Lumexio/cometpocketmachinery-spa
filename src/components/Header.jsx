@@ -18,7 +18,7 @@ export default function Header() {
       padding: '16px 0'
     }}>
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        
+
         {/* Brand Logo & Name */}
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
           <div style={{
@@ -48,9 +48,6 @@ export default function Header() {
           <Link to="/" style={{ color: location.pathname === '/' ? 'var(--primary)' : 'var(--text-main)', transition: '0.2s' }}>
             Ecosystem Portfolio
           </Link>
-          <Link to="/innovations" style={{ color: location.pathname === '/innovations' ? 'var(--primary)' : 'var(--text-main)', transition: '0.2s', display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <Cpu size={16} /> Roadmap & Labs
-          </Link>
           <a href="https://lumexio.site" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)', transition: '0.2s' }}>
             Founder Architect
           </a>
@@ -73,8 +70,8 @@ export default function Header() {
         </div>
 
         {/* Mobile Hamburger Toggle */}
-        <button 
-          className="mobile-menu-btn" 
+        <button
+          className="mobile-menu-btn"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -87,9 +84,7 @@ export default function Header() {
           <Link to="/" onClick={() => setIsMobileMenuOpen(false)} style={{ color: location.pathname === '/' ? 'var(--primary)' : 'var(--text-main)', fontSize: '1.2rem', fontWeight: 600 }}>
             Ecosystem Portfolio
           </Link>
-          <Link to="/innovations" onClick={() => setIsMobileMenuOpen(false)} style={{ color: location.pathname === '/innovations' ? 'var(--primary)' : 'var(--text-main)', fontSize: '1.2rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Cpu size={20} /> Roadmap & Labs
-          </Link>
+
           <a href="https://lumexio.site" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)', fontSize: '1.2rem', fontWeight: 600 }}>
             Founder Architect
           </a>

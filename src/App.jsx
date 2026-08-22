@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Innovations from './pages/Innovations';
+
 
 import Settings from './pages/Settings';
 import './index.css';
@@ -16,7 +16,7 @@ export default function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/innovations" element={<Innovations />} />
+
 
             <Route path="/settings" element={<Settings />} />
           </Routes>
