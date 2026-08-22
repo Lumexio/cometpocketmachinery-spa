@@ -21,7 +21,7 @@ export default function Footer() {
               <div style={{display:"flex",flexDirection:"row",alignItems:"start",gap:"1rem"}}>
                 <Rocket size={24} color="var(--primary)" />
                 <span style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-heading)' }}>
-                  {t('brand.title') || 'COMET POCKET MACHINERY'}
+                  {t('brand.title') || 'COMET POCKET'} <span style={{ color: 'var(--primary)' }}>MACHINERY</span>
                 </span>
               </div>
               <p style={{ fontSize: '0.9rem', lineHeight: 1.5, opacity: 0.8, marginBottom: '8px' }}>
