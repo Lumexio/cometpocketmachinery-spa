@@ -6,23 +6,24 @@ import Home from './pages/Home';
 
 
 import Settings from './pages/Settings';
+import { AppProvider } from './context/AppContext';
 import './index.css';
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', justifyContent: 'space-between' }}>
-        <div>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-
-
-            <Route path="/settings" element={<Settings />} />
-          </Routes>
+    <AppProvider>
+      <BrowserRouter>
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', justifyContent: 'space-between' }}>
+          <div>
+            <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/settings" element={<Settings />} />
+            </Routes>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </AppProvider>
   );
 }

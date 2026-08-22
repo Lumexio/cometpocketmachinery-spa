@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Rocket, Settings, User, Compass, Cpu, ShieldCheck, Menu, X } from 'lucide-react';
+import { Rocket, Settings, Menu, X } from 'lucide-react';
+import { useApp } from '../context/AppContext';
 
 export default function Header() {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useApp();
 
   return (
     <header style={{
@@ -13,7 +15,8 @@ export default function Header() {
       zIndex: 100,
       backdropFilter: 'blur(20px)',
       WebkitBackdropFilter: 'blur(20px)',
-      backgroundColor: 'rgba(10, 10, 13, 0.75)',
+      backgroundColor: 'var(--bg-secondary)',
+      opacity: 0.95,
       borderBottom: '1px solid var(--border-glass)',
       padding: '16px 0'
     }}>
@@ -35,10 +38,10 @@ export default function Header() {
           </div>
           <div>
             <span style={{ fontSize: '1.25rem', fontWeight: 800, fontFamily: 'var(--font-heading)', letterSpacing: '-0.02em', display: 'block' }}>
-              COMET POCKET <span style={{ color: 'var(--primary)' }}>MACHINERY</span>
+              {t('brand.title') || 'COMET POCKET'} <span style={{ color: 'var(--primary)' }}>MACHINERY</span>
             </span>
             <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase' }}>
-              High-Utility Enterprise Ecosystem
+              {t('brand.subtitle')}
             </span>
           </div>
         </Link>
@@ -46,16 +49,16 @@ export default function Header() {
         {/* Center Navigation Links (Desktop) */}
         <nav className="desktop-nav" style={{ display: 'flex', gap: '28px', alignItems: 'center', fontFamily: 'var(--font-heading)', fontWeight: 600, fontSize: '0.95rem' }}>
           <Link to="/" style={{ color: location.pathname === '/' ? 'var(--primary)' : 'var(--text-main)', transition: '0.2s' }}>
-            Ecosystem Portfolio
+            {t('nav.ecosystem')}
           </Link>
           <a href="https://lumexio.site" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)', transition: '0.2s' }}>
-            Founder Architect
+            {t('nav.founder')}
           </a>
         </nav>
 
         {/* Standard Brand Nav Header (Desktop) */}
         <div className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-          <Link to="/settings" title="Application Settings" style={{
+          <Link to="/settings" title={t('nav.settings')} style={{
             padding: '10px',
             background: 'rgba(255,255,255,0.05)',
             border: '1px solid var(--border-glass)',
@@ -82,15 +85,15 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="mobile-nav-overlay">
           <Link to="/" onClick={() => setIsMobileMenuOpen(false)} style={{ color: location.pathname === '/' ? 'var(--primary)' : 'var(--text-main)', fontSize: '1.2rem', fontWeight: 600 }}>
-            Ecosystem Portfolio
+            {t('nav.ecosystem')}
           </Link>
 
           <a href="https://lumexio.site" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)', fontSize: '1.2rem', fontWeight: 600 }}>
-            Founder Architect
+            {t('nav.founder')}
           </a>
           <div style={{ height: '1px', background: 'var(--border-glass)', margin: '10px 0' }} />
           <Link to="/settings" onClick={() => setIsMobileMenuOpen(false)} style={{ color: 'var(--text-main)', fontSize: '1.2rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Settings size={20} /> Application Settings
+            <Settings size={20} /> {t('nav.settings')}
           </Link>
         </div>
       )}
